@@ -1,3 +1,4 @@
+
 import java.util.Scanner;
 public class Dynamic2DArray {
   public static void main(String[] args) {
@@ -6,5 +7,7 @@ public class Dynamic2DArray {
         int rows = sc.nextInt();
      System.out.print("Enter number of columns: ");
         int cols = sc.nextInt();
+
+   int[][] arr = new int[rows][cols];
 
 }
