@@ -10,5 +10,10 @@ public class Dynamic2DArray {
 
    int[][] arr = new int[rows][cols];
     System.out.println("Enter array elements:");
+for (int i = 0; i < rows; i++) {
+            for (int j = 0; j < cols; j++) {
+                arr[i][j] = sc.nextInt();
+            }
+        }
 
 }
