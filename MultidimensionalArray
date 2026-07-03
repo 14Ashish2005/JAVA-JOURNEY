@@ -2,7 +2,7 @@ public class MultiDimensionalArray {
     public static void main(String[] args) {
 
         // Creating a 3D array
-int[][][] arr = {
+        int[][][] arr = {
             {
                 {1, 2},
                 {3, 4}
@@ -12,3 +12,16 @@ int[][][] arr = {
                 {7, 8}
             }
         };
+
+        // Printing all elements
+        for (int i = 0; i < arr.length; i++) {
+            for (int j = 0; j < arr[i].length; j++) {
+                for (int k = 0; k < arr[i][j].length; k++) {
+                    System.out.print(arr[i][j][k] + " ");
+                }
+                System.out.println();
+            }
+            System.out.println();
+        }
+    }
+}
