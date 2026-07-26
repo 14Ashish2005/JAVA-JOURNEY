@@ -17,3 +17,9 @@ class Puppy extends Dog {
         System.out.println("Puppy is weeping");
     }
 }
+
+// Main class
+public class Main {
+    public static void main(String[] args) {
+
+        Puppy p = new Puppy();
