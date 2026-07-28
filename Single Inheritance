@@ -1,2 +1,10 @@
 Single Inheritance:
 One child class inherits from one parent class.
+
+// Parent class
+class Animal {
+    void eat() {
+        System.out.println("Animal is eating");
+    }
+}
+
