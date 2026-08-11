@@ -5,3 +5,9 @@ One parent → multiple children
          /      \
         ↓        ↓
        Dog      Cat
+
+class Animal {
+    void eat() {
+        System.out.println("Animal is eating");
+    }
+}
