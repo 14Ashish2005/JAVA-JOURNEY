@@ -1,2 +1,7 @@
 Hierarchical Inheritance:
 One parent → multiple children
+
+          Animal
+         /      \
+        ↓        ↓
+       Dog      Cat
