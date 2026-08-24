@@ -16,4 +16,5 @@ public class Main{
     }
 }
 
-
+Output:
+MAx value is 21
