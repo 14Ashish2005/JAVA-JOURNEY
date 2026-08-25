@@ -1,1 +1,16 @@
 //2D Array creation
+public class Main{
+    public static void main(String []args){
+        int arr[][];
+        arr =  new int[][]{{12,13},{18,19}};
+        int rowLength = arr.length;
+        int colLength = arr[0].length;
+        for(int row =0;row <rowLength;row++){
+            for(int col = 0 ; col<colLength;col++ ){
+                System.out.print(arr[row][col] + " ");
+            }
+            System.out.println();
+        }
+        
+    }
+}
