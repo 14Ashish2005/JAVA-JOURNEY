@@ -1,1 +1,19 @@
+// print the maximum values given at the index of the 2D array.
 
+public class Main{
+    public static void main(String []args){
+        int arr[][] = new int[][]{{23,24,12,45},{9,56,15,23}};
+        int maxValue = arr[0][0] ;
+        for (int i = 0 ; i <arr.length; i++){
+            for(int j = 0 ; j<arr[i].length;j++){
+               if(maxValue < arr[i][j]){
+                   maxValue = arr[i][j];
+               }
+            }
+        }
+        System.out.println("Maximum value in the index is: "+maxValue);
+    }
+}
+
+output:
+Maximum value in the index is: 56
