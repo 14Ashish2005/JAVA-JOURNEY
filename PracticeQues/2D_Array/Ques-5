@@ -1,1 +1,20 @@
+// print the minimum values given at the index of the 2D array.
 
+public class Main{
+    public static void main(String []args){
+        int arr[][] = new int[][]{{23,24,12,45},{9,56,15,23}};
+        int minValue = arr[0][0] ;
+        for (int i = 0 ; i <arr.length; i++){
+            for(int j = 0 ; j<arr[i].length;j++){
+               if(minValue > arr[i][j]){
+                   minValue = arr[i][j];
+               }
+            }
+        }
+        System.out.println("Minimum value in the index is: "+minValue);
+    }
+}
+
+
+output:
+Minimum value in the index is: 9
