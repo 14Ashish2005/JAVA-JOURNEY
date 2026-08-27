@@ -14,3 +14,8 @@ public class Main{
         System.out.println("Value:"+str);
     }
 }
+
+
+OUTPUT:
+Enter your string:Ashish kumar
+Value:Ashish kumar
