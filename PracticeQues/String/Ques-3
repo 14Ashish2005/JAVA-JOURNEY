@@ -1,4 +1,9 @@
 // Print a string using nextline
+The nextLine() method in Java is a function of the java.util.Scanner class. It reads a full line of text from an input stream (like standard input/keyboard or a file) up until a newline character (\n) or Enter key press
+
+Reading Full Phrases or Sentences: Unlike next(), which stops reading at the first space, nextLine() preserves spaces and reads the entire line of text as a single String
+
+CODE:
 
 import java.util.Scanner;
 public class Main{
