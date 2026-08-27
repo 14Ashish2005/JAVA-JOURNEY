@@ -1,4 +1,4 @@
-
+//Check the strings are equal or not using do equals case
 public class Main{
     public static void main(String []args){
         String str1 = "AsHISH";
