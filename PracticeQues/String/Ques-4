@@ -1,0 +1,20 @@
+//print a string using next()
+
+next() stops reading at the first space.
+
+code:
+
+import java.util.Scanner;
+public class Main{
+    public static void main(String []args){
+        Scanner input = new Scanner(System.in);
+        System.out.println("Enter your string:");
+        String str = input.next();
+        System.out.println("Value:"+str);
+        
+    }
+}
+
+Output:
+Enter your string:ashish kumar
+Value:ashish
