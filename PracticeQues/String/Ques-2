@@ -1,0 +1,15 @@
+//check the string is equal or not using dotequalsIgnoreCase.
+
+public class Main{
+    public static void main(String []args){
+        String str1 = "AsHISH";
+        String str2 = "ashish";
+        
+        if(str1.equalsIgnoreCase(str2)){
+            System.out.println("Both strings are equal");
+        }
+        else{
+            System.out.println("Both strings are not equal");
+            }
+    }
+}
