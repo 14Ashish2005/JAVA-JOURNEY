@@ -1,1 +1,39 @@
 // print a string using both next(); and dnextLine();
+
+
+import java.util.Scanner;
+
+public class Nextt {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Enter first word: ");
+        String str = input.next(); 
+        System.out.println("You entered: " + str);
+
+        input.nextLine(); // Clears " kumar\n" out of the buffer
+
+        System.out.print("Enter full string: ");
+        String str2 = input.nextLine(); // Now properly pauses for new input
+        System.out.println("You entered: " + str2);
+
+        input.close();
+    }
+}
+
+
+//import java.util.Scanner;
+public class Main{
+    public static void main(String []args){
+        Scanner input = new Scanner(System.in);
+        System.out.println("Enter your string:");
+        String str = input.next();
+        System.out.println("Value:"+str);
+        input.nextLine();
+        
+        System.out.println("Enter your string:");
+        String str2 = input.nextLine();
+        System.out.println("Value:"+str2);
+        input.close();
+    }
+}
