@@ -1,0 +1,33 @@
+// count the number of vowel in string..
+
+import java.util.Scanner;
+
+public class BasicStr {
+
+    static int getVowelCount(String str) {
+        int count = 0;
+        for (int i = 0; i < str.length(); i++) {
+            char ch = str.charAt(i);
+            if (ch == 'a' || ch == 'A' || 
+                ch == 'E' || ch == 'e' || 
+                ch == 'I' || ch == 'i' || 
+                ch == 'O' || ch == 'o' || 
+                ch == 'U' || ch == 'u') {
+                count++;
+            }
+        }
+        return count;
+    }
+
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Enter your string: ");
+        String str = input.nextLine(); // Reads the full line typed by the user
+
+        int vowelCount = getVowelCount(str);
+        System.out.println("Total vowels in \"" + str + "\" is: " + vowelCount);
+
+        input.close();
+    }
+}
