@@ -1,1 +1,19 @@
+//Count length  of string without using length.
 
+public class PrintChars {
+    public static void main(String[] args) {
+    String str = "Ashish";
+    int coount = 0;
+    for(char c :str.toCharArray()){
+        System.out.println(c);
+    }
+    }
+}
+
+//Output
+A
+s
+h
+i
+s
+h
