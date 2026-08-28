@@ -21,3 +21,15 @@ public class Main {
     }
        }
     }
+
+
+
+//print in one line 
+
+public class PrintChars {
+    public static void main(String[] args) {
+        String str = "Hello";
+
+        str.chars().forEach(ch -> System.out.println((char) ch));
+    }
+}
