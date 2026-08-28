@@ -8,3 +8,16 @@ public class Main {
        }
     }
 }
+
+
+//print each character of string using for each loop.
+
+public class Main {
+    public static void main(String[] args) {
+       String str = "hello";
+   
+    for(char ch:str.toCharArray()){
+        System.out.println(ch);
+    }
+       }
+    }
