@@ -15,3 +15,22 @@ public class revStr{
     }
 
 }
+
+
+//method-2-> using string builder 
+
+import java.util.Scanner;
+
+public class ReverseString {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter a string: ");
+        String str = input.nextLine();
+
+        // Convert String to StringBuilder, call reverse(), and convert back to String
+        String reversed = new StringBuilder(str).reverse().toString();
+
+        System.out.println("Reversed string: " + reversed);
+        input.close();
+    }
+}
