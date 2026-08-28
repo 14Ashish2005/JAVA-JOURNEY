@@ -9,7 +9,7 @@ public class Vowels{
         String str = input.nextLine();
         int count = 0;
         for(char ch : str.toCharArray()){
-            if(ch == 'a'|| ch == 'A'|| ch == 'b'|| ch == 'B'|| ch == 'c'|| ch == 'C'|| ch == 'd'|| ch == 'D'|| ch == 'e'|| ch == 'E'){
+            if(ch == 'a'|| ch == 'A'|| ch == 'i'|| ch == 'I'|| ch == 'o'|| ch == 'O'|| ch == 'u'|| ch == 'U'|| ch == 'e'|| ch == 'E'){
                 count++;
             }
         }
