@@ -33,3 +33,10 @@ public class Main{
         return reverse;
     }
 }
+
+
+//OUTPUT..
+Enter your string:
+RACECAR
+This is Palindrome string.
+true
