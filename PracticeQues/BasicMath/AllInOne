@@ -1,0 +1,36 @@
+import java.util.Scanner;
+public class BasicMath{
+  public  static void printDigit(int num){
+        
+        while ( num != 0){
+           int digit = num%10;
+            System.out.println(digit);
+            num /=10;
+        }
+    }
+
+      public  static int countDigit(int num){
+        int count = 0;
+        while ( num != 0){
+           int digit = num%10;
+           count++;
+            
+            num /=10;
+        }
+        return count;
+    }
+
+
+public static void main(String []args){
+        Scanner input = new Scanner(System.in);
+        System.out.println("Enter your number: ");
+        int num = input.nextInt();
+        // System.out.println("your digits are: ");
+        // printDigit(num);
+        int ans = countDigit( num);
+        System.out.print("Total digits in your number is :");
+        System.out.println(ans);
+        input.close();
+    
+}
+}
