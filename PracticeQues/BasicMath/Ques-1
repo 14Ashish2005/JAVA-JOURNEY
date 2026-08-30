@@ -22,3 +22,15 @@ public static void main(String []args){
     
 }
 }
+
+
+//Output:
+Enter your number: 
+125478 
+your digits are: 
+8
+7
+4
+5
+2
+1
