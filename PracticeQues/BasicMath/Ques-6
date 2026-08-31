@@ -1,1 +1,31 @@
 //check yoour number is prime or not
+
+//Reverse the digit of your number..
+
+import java.util.Scanner;
+public class BasicMath{
+public static boolean isPrime(int num){
+    if (num < 2) return false; // Handles 0, 1, and negative numbers
+    for(int i = 2; i * i <= num ; i++){
+        if (num % i == 0 ){
+            return false;
+        }
+    }
+    return true;
+}
+
+
+
+public static void main(String []args){
+        Scanner input = new Scanner(System.in);
+        System.out.println("Enter your number: ");
+        int num = input.nextInt();
+     
+        boolean ans = isPrime(num);
+        System.out.print("Prime :"+ans);
+        
+        
+        input.close();
+    
+}
+}
