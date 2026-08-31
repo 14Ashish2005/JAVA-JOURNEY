@@ -1,0 +1,38 @@
+//find the gcd of a number.
+
+
+import java.util.Scanner;
+public class BasicMath{
+
+public static int getGcd(int a , int b){
+    //gcd(a,b) = gcd (b,a%b);
+    while(b!= 0){
+        int old_b = b;
+        b = a%b;
+        a = old_b;
+    }
+     int ans = a ;
+     return ans ;
+}
+
+
+
+public static void main(String []args){
+        Scanner input = new Scanner(System.in);
+      
+        System.out.println("Enter num1: ");
+        int num1 = input.nextInt();
+        System.out.println("Enter num2: ");
+        int num2 = input.nextInt();
+        System.out.println("Your Gcd is:" +getGcd(num1,num2));
+    
+        input.close();
+}
+}
+
+//output:
+Enter num1: 
+12
+Enter num2: 
+13
+Your Gcd is:1
