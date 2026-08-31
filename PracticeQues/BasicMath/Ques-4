@@ -27,3 +27,8 @@ public static void main(String []args){
     
 }
 }
+
+//OUTPUT:
+Enter your number: 
+12365
+Reverse of your number is :56321
