@@ -1,1 +1,29 @@
 //Reverse the digit of your number..
+
+import java.util.Scanner;
+public class BasicMath{
+public static int reverseDigit(int num){
+    int revNum = 0 ;
+    while(num != 0){
+        int digit = num%10;
+        revNum = (revNum*10)+digit;
+        num /=10;
+    }
+    return revNum;
+}
+
+
+
+public static void main(String []args){
+        Scanner input = new Scanner(System.in);
+        System.out.println("Enter your number: ");
+        int num = input.nextInt();
+     
+        int ans = reverseDigit(num);
+        System.out.print("Reverse of your number is :"+ans);
+        
+        
+        input.close();
+    
+}
+}
