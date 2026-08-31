@@ -50,6 +50,14 @@ public static boolean isPalindrome(int num){
         return false;
     }
 }
+public static boolean isPrime(int num){
+    for(int i = 2; i*i <= num ; i++){
+        if (num % i == 0 ){
+            return false;
+        }
+    }
+    return true;
+}
 
 
 
@@ -59,21 +67,19 @@ public static void main(String []args){
         int num = input.nextInt();
         // System.out.println("your digits are: ");
         // printDigit(num);
-
         // int ans = countDigit( num);
         // System.out.print("Total digits in your number is :");
         // System.out.println(ans);
-
-       // int answer = digitSum(num);
-        //System.out.println("Sum of your digit is : "+answer);
-
-       //  int ans = reverseDigit(num);
-        //System.out.print("Reverse of your number is :"+ans);
-
-       boolean ans = isPalindrome(num);
+        // int answer = digitSum(num);
+        // System.out.println("Sum of your digit is : "+answer);
+        // int ans = reverseDigit(num);
+        // System.out.print("Reverse of your number is :"+ans);
+        
+        // boolean ans = isPalindrome(num);
+        // System.out.println(ans);
+        // input.close();
+        boolean ans = isPrime(num);
         System.out.println(ans);
-        input.close();
-        input.close();
     
 }
 }
