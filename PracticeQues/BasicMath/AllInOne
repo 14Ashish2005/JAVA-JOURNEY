@@ -29,6 +29,15 @@ public static int digitSum(int num){
     }
     return sum;
 }
+public static int reverseDigit(int num){
+    int revNum = 0 ;
+    while(num != 0){
+        int digit = num%10;
+        revNum = (revNum*10)+digit;
+        num /=10;
+    }
+    return revNum;
+}
 
 
 
@@ -38,11 +47,16 @@ public static void main(String []args){
         int num = input.nextInt();
         // System.out.println("your digits are: ");
         // printDigit(num);
+
         // int ans = countDigit( num);
         // System.out.print("Total digits in your number is :");
         // System.out.println(ans);
-        int answer = digitSum(num);
-        System.out.println("Sum of your digit is : "+answer);
+
+       // int answer = digitSum(num);
+        //System.out.println("Sum of your digit is : "+answer);
+
+         int ans = reverseDigit(num);
+        System.out.print("Reverse of your number is :"+ans);
         
         input.close();
     
