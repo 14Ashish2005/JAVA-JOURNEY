@@ -59,13 +59,23 @@ public static boolean isPrime(int num){
     }
     return true;
 }
+public static int getGcd(int a , int b){
+    //gcd(a,b) = gcd (b,a%b);
+    while(b!= 0){
+        int old_b = b;
+        b = a%b;
+        a = old_b;
+    }
+     int ans = a ;
+     return ans ;
+}
 
 
 
 public static void main(String []args){
         Scanner input = new Scanner(System.in);
-        System.out.println("Enter your number: ");
-        int num = input.nextInt();
+        // System.out.println("Enter your number: ");
+        // int num = input.nextInt();
         // System.out.println("your digits are: ");
         // printDigit(num);
         // int ans = countDigit( num);
@@ -78,9 +88,14 @@ public static void main(String []args){
         
         // boolean ans = isPalindrome(num);
         // System.out.println(ans);
-        // input.close();
-        boolean ans = isPrime(num);
-        System.out.println(ans);
+        // boolean ans = isPrime(num);
+        // System.out.println(ans);
+        System.out.println("Enter num1: ");
+        int num1 = input.nextInt();
+        System.out.println("Enter num2: ");
+        int num2 = input.nextInt();
+        System.out.println("Your Gcd is:" +getGcd(num1,num2));
     
+        input.close();
 }
 }
