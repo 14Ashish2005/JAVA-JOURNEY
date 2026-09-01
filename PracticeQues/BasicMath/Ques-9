@@ -28,3 +28,9 @@ public class basicMath{
         System.out.println(answer);
     }
 }
+
+//output
+enter your number :
+153
+yes it is  an armstrong number
+true
