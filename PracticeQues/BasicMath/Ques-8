@@ -1,1 +1,38 @@
 //find the lcm of two number..
+import java.util.Scanner;
+public class basicMath{
+    public static int getGcd(int a , int b){
+        while (b != 0){
+            int old_b = b;
+            b = a%b;
+            a = old_b;
+            }
+        int ans = a;
+        return ans;
+    }
+    public static int getLcm(int a, int b ){
+        int gcd = getGcd(a,b);
+        int prod = a*b;
+        int lcm = prod/gcd;
+        return lcm;
+    }
+    public static void main(String []args){
+    Scanner input = new Scanner(System.in);
+        System.out.println("Enter num1 :");
+        int num1 = input.nextInt();
+        System.out.println("Enter num2 :");
+        int num2 = input.nextInt();
+        System.out.println("Your gcd is :"+getLcm(num1, num2));
+
+    
+
+    }
+}
+
+//output:
+Enter num1 :
+12
+Enter num2 :
+14
+Your gcd is :84
+
