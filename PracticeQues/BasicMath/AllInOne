@@ -69,7 +69,12 @@ public static int getGcd(int a , int b){
      int ans = a ;
      return ans ;
 }
-
+    public static int getLcm(int a, int b ){
+        int gcd = getGcd(a,b);
+        int prod = a*b;
+        int lcm = prod/gcd;
+        return lcm;
+    }
 
 
 public static void main(String []args){
@@ -94,7 +99,9 @@ public static void main(String []args){
         int num1 = input.nextInt();
         System.out.println("Enter num2: ");
         int num2 = input.nextInt();
-        System.out.println("Your Gcd is:" +getGcd(num1,num2));
+
+        // System.out.println("Your Gcd is:" +getGcd(num1,num2));
+        // System.out.println("Your Lcm is:" +getLcm(num1,num2));
     
         input.close();
 }
