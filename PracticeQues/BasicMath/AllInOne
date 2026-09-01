@@ -94,6 +94,24 @@ public static int getGcd(int a , int b){
         return false ;
        }
     }
+  public static boolean perfectNum(int num){
+        int sum = 1;
+        for(int i = 2; i *i<=num;i++){
+            if(num%i==0){
+            int firstFact = i ;
+            int secondFact = num/i;
+            sum = sum + firstFact + secondFact;
+            }
+        }
+        if(sum == num){
+            System.out.println("perfect number..");
+            return true;
+        }
+        else{
+            System.out.println("perfect number..");
+            return false;
+        }
+    }
 public static void main(String []args){
         Scanner input = new Scanner(System.in);
         // System.out.println("Enter your number: ");
@@ -120,10 +138,15 @@ public static void main(String []args){
         // System.out.println("Your Gcd is:" +getGcd(num1,num2));
         // System.out.println("Your Lcm is:" +getLcm(num1,num2));
 
-         System.out.println("enter your number :");
-        int num = input.nextInt();
-        boolean answer = armStrongNum(num);
-        System.out.println(answer);
+         //System.out.println("enter your number :");
+        //int num = input.nextInt();
+        //boolean answer = armStrongNum(num);
+       // System.out.println(answer);
+
+        // System.out.println("enter your number :");
+       // int num = input.nextInt();
+        // boolean answer = perfectNum(num);
+       // System.out.println(answer);
     
         input.close();
 }
