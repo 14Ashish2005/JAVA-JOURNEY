@@ -32,3 +32,10 @@ public class BasicMath{
         // System.out.println(ans);
     }
 }
+
+
+//output
+Enter your number:5
+2
+3
+5
