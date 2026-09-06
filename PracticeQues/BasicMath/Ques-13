@@ -1,1 +1,23 @@
 //write a program to find the armstrong number in between 100 to 1000..
+
+class Armstrong {
+
+    static boolean isArmstrong(int n) {
+        int temp = n, sum = 0;
+
+        while (temp > 0) {
+            int r = temp % 10;
+            sum += r * r * r;
+            temp /= 10;
+        }
+
+        return sum == n;
+    }
+
+    public static void main(String[] args) {
+        for (int i = 100; i <= 1000; i++) {
+            if (isArmstrong(i))
+                System.out.println(i);
+        }
+    }
+}
