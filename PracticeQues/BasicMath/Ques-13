@@ -21,3 +21,11 @@ class Armstrong {
         }
     }
 }
+
+
+
+//Output:
+153
+370
+371
+407
